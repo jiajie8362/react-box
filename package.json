@@ -1,0 +1,25 @@
+{
+  "name": "react-box",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server": "cd server && json-server db.json -w -p 3000",
+    "dev": "roadhog server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jiajie8362/react-box.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jiajie8362/react-box/issues"
+  },
+  "homepage": "https://github.com/jiajie8362/react-box#readme",
+  "dependencies": {
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-router": "^4.2.0"
+  }
+}
