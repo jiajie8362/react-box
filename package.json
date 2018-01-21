@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "server": "cd server && json-server db.json -w -p 3000",
+    "server": "node server/index.js",
     "dev": "roadhog server"
   },
   "repository": {
@@ -23,5 +23,8 @@
     "react-prop-types": "^0.4.0",
     "react-router": "^4.2.0",
     "react-router-dom": "^4.2.2"
+  },
+  "devDependencies": {
+    "json-server": "^0.12.1"
   }
 }
