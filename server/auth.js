@@ -1,9 +1,8 @@
 const expireTime = 1000 * 60;
 
-module.exports = function(req, res, next) {
+module.exports = function (req, res, next) {
   res.header('Access-Control-Expose-Headers', 'access-token');
   const now = Date.now();
-
   let unauthorized = true;
   const token = req.headers['access-token'];
   if (token) {
@@ -13,9 +12,9 @@ module.exports = function(req, res, next) {
       res.header('access-token', now);
     }
   }
-  if(unauthorized) {
+  if (unauthorized) {
     res.sendStatus(401);
   } else {
     next();
   }
-};
+}

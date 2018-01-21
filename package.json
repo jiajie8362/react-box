@@ -1,30 +1,21 @@
 {
   "name": "react-box",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "server": "node server/index.js",
-    "dev": "roadhog server"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/jiajie8362/react-box.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/jiajie8362/react-box/issues"
-  },
-  "homepage": "https://github.com/jiajie8362/react-box#readme",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
+    "antd": "^3.1.4",
+    "json-server": "^0.12.1",
     "react": "^16.2.0",
-    "react-dom": "^16.2.0",
-    "react-prop-types": "^0.4.0",
-    "react-router": "^4.2.0",
-    "react-router-dom": "^4.2.2"
+    "react-dom": "^16.2.0"
   },
   "devDependencies": {
-    "json-server": "^0.12.1"
+    "react-scripts": "1.1.0"
+  },
+  "scripts": {
+    "server": "node server/index.js",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
   }
 }

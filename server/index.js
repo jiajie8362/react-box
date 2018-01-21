@@ -18,9 +18,7 @@ server.post('/login', function (req, res, next) {
   }
 });
 
-server.use(require('./auth'));
 server.use(router);
-
 server.listen(3000, function () {
   console.log('JSON Server is running in http://localhost:3000');
 });
