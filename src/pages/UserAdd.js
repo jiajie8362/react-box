@@ -97,7 +97,5 @@ class UserAdd extends React.Component {
     );
   }
 }
-UserAdd.contextTypes = {
-  router: PropTypes.object.isRequired
-};
+
 export default UserAdd;
