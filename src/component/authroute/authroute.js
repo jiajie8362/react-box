@@ -18,6 +18,8 @@ class AuthRoute extends Component {
         if(res.status == 200) {
           if(res.data.code==1) {
             this.props.history.push('/login');
+          } else {
+          	console.log('dfdf')
           }
         } else {
           this.props.history.push('/login');
