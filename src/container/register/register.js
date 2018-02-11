@@ -3,11 +3,11 @@ import Logo from '../../component/logo/logo'
 import {List, InputItem,Radio, WingBlank, WhiteSpace, Button} from 'antd-mobile'
 import {connect} from 'react-redux'
 import {Redirect} from 'react-router-dom'
-import {register} from '../../redux/user.redux'
+import {regisger} from '../../redux/user.redux'
 
 @connect(
   state=>state.user,
-  {register}
+  {regisger}
 )
 class Register extends React.Component{
   constructor(props) {
@@ -27,7 +27,7 @@ class Register extends React.Component{
     })
   }
   handleRegister(){
-    this.props.register(this.state)
+    this.props.regisger(this.state)
   }
   render(){
     const RadioItem = Radio.RadioItem
