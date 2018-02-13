@@ -58,7 +58,7 @@ Router.post('/register', function(req, res){
 Router.get('/info',function(req, res){
   const {userid} = req.cookies
   if (!userid) {
-    return res.json({code:1})
+    return res.json({code:0})
   }
   User.findOne({_id:userid} ,_filter , function(err,doc){
     if (err) {

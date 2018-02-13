@@ -10,7 +10,6 @@ import UserCard from '../usercard/usercard'
 class Genius extends React.Component{
   componentDidMount() {
     this.props.getUserList('boss')
-
   }
   render(){
     return <UserCard userlist={this.props.userlist}></UserCard>

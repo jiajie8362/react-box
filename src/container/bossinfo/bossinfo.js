@@ -1,3 +1,4 @@
+
 import React from 'react'
 import {NavBar,InputItem, TextareaItem, Button} from 'antd-mobile'
 import AvatarSelector from '../../component/avatar-selector/avatar-selector'

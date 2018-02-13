@@ -15,6 +15,7 @@ class AuthRoute extends Component {
     }
     axios.get('/user/info')
       .then(res=>{
+        console.log(res.data)
         if(res.status == 200) {
           if(res.data.code==1) {
             this.props.history.push('/login');

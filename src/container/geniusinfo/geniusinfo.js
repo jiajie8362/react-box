@@ -1,3 +1,4 @@
+
 import React from 'react'
 import {NavBar,InputItem, TextareaItem, Button} from 'antd-mobile'
 import AvatarSelector from '../../component/avatar-selector/avatar-selector'
@@ -9,12 +10,12 @@ import {update} from '../../redux/user.redux'
   state=>state.user,
   {update}
 )
-export default class GeniusInfo extends React.Component {
+class GeniusInfo extends React.Component{
   constructor(props) {
     super(props)
     this.state = {
       title:'',
-      desc:'',
+      desc:''
     }
   }
   onChange(key,val){
@@ -22,10 +23,9 @@ export default class GeniusInfo extends React.Component {
       [key]:val
     })
   }
-
-  render() {
-    const path = this.props.location.path;
-    const redirect = this.props.redirectTo;
+  render(){
+    const path = this.props.location.pathname
+    const redirect = this.props.redirectTo
     return (
       <div>
         {redirect&&redirect!==path? <Redirect to={this.props.redirectTo}></Redirect> :null}
@@ -53,6 +53,9 @@ export default class GeniusInfo extends React.Component {
           }}
           type='primary'>保存</Button>
       </div>
-    );
+
+    )
   }
-};
+}
+
+export default GeniusInfo
